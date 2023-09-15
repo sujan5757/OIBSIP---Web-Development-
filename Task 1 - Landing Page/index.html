@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="Style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("fr3.jpg ");
+            background-size: cover;
+        }
+        
+        nav {
+            width: 100%;
+            height: 100px;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        
+        .logo {
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        
+        .Menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        
+        .Menu a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid orange;
+            transition: 0.4s linear;
+        }
+        
+        .Menu a:hover:before {
+            width: 90%;
+        }
+        
+        .h-txt {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        
+        .h-txt span {
+            letter-spacing: 5px;
+        }
+        
+        .h-txt h1 {
+            font-size: 3.5em;
+        }
+        
+        .h-txt a {
+            text-decoration: none;
+            background: orange;
+            color: white;
+            padding: 15px, 25px;
+            letter-spacing: 5px;
+            transition: 0.4s linear;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <b>Best Tourism Company</b>
+            </div>
+            <div class="Menu">
+                <a href="https://www.tripadvisor.in/Restaurant_Review-g297629-d10516652-Reviews-Siri_Cafe-Chikmagalur_Chikkamagaluru_District_Karnataka.html "><b>Home</b></a>
+                <a href="https://www.google.com/search?rlz=1C1JJTC_enIN982IN982&sxsrf=APwXEdeJgGcJqFM3ZA9ltWIoe8xb39pwhw:1687597093203&q=siri+cafe&tbm=isch&sa=X&ved=2ahUKEwicpY6Kxdv_AhWBSGwGHQXGBxEQ0pQJegQIDhAB&biw=1536&bih=760&dpr=1.25 "><b>about</b></a>
+                <a href="#"><b>Contact Us</b></a>
+            </div>
+
+        </nav>
+        <section class="h-txt">
+            <h1><b>Enjoy The Chikkamagaluru Tour</b></h1>
+            <br>
+            <a href="#"><b>Book Your Trip Now</b></a>
+        </section>
+    </header>
+</body>
+
+</html>

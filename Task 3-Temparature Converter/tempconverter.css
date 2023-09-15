@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+.bg-container {
+    background-image: url("");
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.top {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+header {
+    padding: 20px;
+    background-color: transparent;
+}
+
+header p {
+    color: rgb(170, 92, 92);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "roboto";
+}
+
+.container {
+    display: inline-block;
+    width: 500px;
+    height: 420px;
+    background-color: rgb(52, 175, 83);
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 16px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+input {
+    padding: 3px 3px;
+    margin: 10px;
+    height: 35px;
+    border-radius: 2px;
+    border-color: black;
+    transition: .3s border-color;
+}
+
+#givenscale {
+    height: 35px;
+    width: 120px;
+    font-size: 16px;
+    font-family: "roboto";
+    font-weight: bold;
+    border-radius: 6px;
+    border-color: black;
+    border-style: solid;
+}
+
+#tempscale {
+    height: 35px;
+    width: 120px;
+    font-size: 16px;
+    font-family: "roboto";
+    font-weight: bold;
+    border-radius: 6px;
+    border-color: black;
+    border-style: solid;
+}
+
+#temp {
+    height: 35px;
+    width: 60px;
+    font-size: 18px;
+    font-family: "roboto";
+    font-weight: bold;
+    border-radius: 6px;
+    border-color: black;
+}
+
+#submitbtn {
+    height: 2.5rem;
+    width: 7rem;
+    font-family: "roboto";
+    font-weight: bold;
+    border-style: solid;
+    color: rgb(13, 13, 13);
+    border-radius: 6px;
+    border-color: white;
+    font-size: 20px;
+}
+
+#resultContainer {
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(199, 237, 10);
+    font-size: 20px;
+    border-radius: 6px;
+    border-color: whitesmoke;
+    border: rgb(12, 5, 5);
+    border-style: solid;
+    font-family: "roboto";
+    font-weight: bold;
+}
+
+#footer {
+    position: fixed;
+    color: white;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-size: 25px;
+}

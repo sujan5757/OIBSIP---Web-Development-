@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature-Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tempconverter.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <h1 class="text-danger">Temperature Converter</h1>
+        </div>
+    </header>
+    <section class="container">
+        <form onsubmit="calcTemp();return false;">
+            <label for="temp" class="pr-2">Please enter temperature value and type: </label>
+            <input type="number" name="temp" id="temp" step="any" value="0.0">
+
+            <select id="givenscale" name="givenscale">
+                    <option style="display:none;" selected disabled>Choose type</option>
+                    <option value="°C">Celcius</option>
+                    <option value="°F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
+            <hr />
+            <label for="tempscale">Choose the temp type you need to convert to:</label>
+            <select id="tempscale" name="tempscale">
+                    <option style="display:none;" selected disabled>Choose type</option>
+                    <option value="°C">Celcius</option>
+                    <option value="°F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
+            <hr />
+            <div class="m-2">
+                <input type="submit" name="temp" id="submitbtn" class="btn btn-outline-warning " value="Convert">
+                <input type="reset" name="temp" id="submitbtn" class="btn btn-outline-warning " value="Reset">
+            </div>
+            <div id="resultContainer"></div>
+        </form>
+    </section>
+    <script src="./script.js"></script>
+    </div>
+</body>
+
+</html>

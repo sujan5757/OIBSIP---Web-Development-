@@ -1,0 +1,12 @@
+body {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2in;
+}
+
+form {
+    border: 2px black solid;
+    padding: 50px;
+}
